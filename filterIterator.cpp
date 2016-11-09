@@ -15,5 +15,9 @@ template <class T>
 T FilterIterator<T>::next()
 {
     // TODO
-    return it_->next();
+    T tmp = it_->next();
+    if(predicate_->test(tmp))
+        return tmp;
+    else
+        next();
 }
