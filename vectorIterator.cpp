@@ -1,3 +1,5 @@
+#include "vectorIterator.h"
+
 template <class T>
 VectorIterator<T>::VectorIterator(std::vector<T> v)
     : vector_(v), index_(-1)

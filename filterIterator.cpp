@@ -1,3 +1,5 @@
+#include "filterIterator.h"
+
 template <class T>
 FilterIterator<T>::FilterIterator(Iterator<T> * it, const Predicate<T> * predicate)
     : it_(it), predicate_(predicate)
