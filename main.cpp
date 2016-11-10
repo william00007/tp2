@@ -26,10 +26,11 @@ std::vector<int> asIntVector(int array[], int length)
 
 int main()
 {
-    int numbers[] = {1, -2, 3, -4, 5};
-    std::vector<int> vec = asIntVector(numbers, 5);
+    int numbers[] = {1, -2, 3, -4, 5,-6};
+    int taille = sizeof(numbers)/sizeof(int);
+    std::vector<int> vec = asIntVector(numbers, taille);
     VectorIterator<int> * it = new VectorIterator<int>(vec);
-    print(it);
+//    print(it);
 
     FilterIterator<int> * filteredIt = new FilterIterator<int>(
         new VectorIterator<int>(vec), PositiveIntPredicate::instance);

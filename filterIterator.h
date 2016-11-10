@@ -15,8 +15,9 @@ class FilterIterator : public Iterator<T>
     virtual T next();
 
   private:
-    Iterator<T> * it_;
+    Iterator<T> * it_, * myIt_;
     const Predicate<T> * predicate_;
+
 };
 
 // C++ templates hell
