@@ -19,4 +19,3 @@ class VectorIterator : public Iterator<T>
 };
 
 // Seriously, C++ templates?
-#include "vectorIterator.cpp"
